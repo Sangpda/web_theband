@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.3333%;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    position: relative;
+    display: inline-block;
+}
+
+#nav > li > a {
+    line-height: 46px;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+
+#nav > li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+    display: block;
+}
+
+#nav > li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    color: #000;
+    line-height: 38px;
+    padding: 0 12px;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav li {
+    min-width: 160px;
+    background-color: #fff;
+}
+
+#nav .nav-icon-down {
+    font-size: 12px;
+}
+
+#header .search-btn {
+    float: right;
+
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 23px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/F8_web_theband/assets/img/newyork.jpeg) top center/cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+#slider .text-disription {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+#content {
+
+}
+
+#content .content-section {
+    padding: 64px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#content .content-section-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+#content .content-section-sub-heading {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    
+}
+
+#content .about-text {
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+#content .member-list {
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;   
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+#content .tour-dates {
+    background-color: #000;
+}
+
+#content .tour-dates {
+    color: #fff;
+}
+
+#content .tour-dates-sold {
+    background-color: #fff;
+    list-style-type: none;
+    margin-top: 30px;
+}
+#content .tour-dates-sold li {
+    padding: 8px 16px;
+    color: #757575;
+    font-size: 15px;
+}
+#content .tour-dates-sold li + li {
+    border-top: 1px solid #ddd;
+}   
+
+#content .sould-out {
+    margin-left: 16px;
+    padding: 4px 3px;
+    background-color: #f44336;
+    color:#fff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#content .ticket-end {
+    color: #fff;
+    background-color: #000;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    float: right;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+#content .address {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    font-size: 15px;
+}
+
+#content .place-time {
+    padding: 0 16px;
+    background: #fff;
+    line-height: 1.5;
+}
+
+#content .address h3 {
+    padding-top: 15px;
+    font-weight: 500;
+    color: #000;
+    font-size: 15px;
+}
+
+#content .address h4 {
+    font-weight: 500;
+    color: rgba(0, 0, 0, .4);
+    margin-top: 15px;
+}
+
+#content .address p {
+    margin-top: 15px;
+    color: #000;
+}
+
+#content .place-time a {
+    background-color: #000;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+
+#content .address-img {
+    width: 100%;
+    display: block;
+}
+
+#content .content-contact {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+#content .content-contact i {
+    width: 30px;
+    display: inline-block;
+}
+
+#content .contact-info {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+#content .contact-form {
+    font-size: 15px;
+    /* display: inline-block; */
+}
+
+.contact-form .message {
+    margin: 8px 0;
+}
+
+.contact-form .contact-submit {
+    background-color: #000;
+    color: #fff;
+    float: right;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#content .contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#content-map .map {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-item li {
+    display: inline-block;
+}
+
+#footer .footer-icon {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0 4px;
+    color: #737373;
+}
+
+#footer .copyright {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #737373;
+}
+
+#footer .copyright a {
+    color: #737373;
+}
